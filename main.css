@@ -1,0 +1,688 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Maitree:wght@200;300;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: "Maitree", serif;
+}
+
+/* ------- General Apparence ------- */
+.limit-wid {
+  max-width: 1065px;
+  margin: 0 auto;
+}
+
+/* Estilos para telas menores (768px ou menos de largura) */
+@media (max-width: 1072px) {
+  .limit-wid {
+    max-width: 90%; /* Altera a largura máxima para preencher a largura da tela */
+  }
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.btn {
+  border-radius: 55px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 12px 35px;
+  color: black;
+  font-size: 1em;
+  word-spacing: unset;
+  outline: nonne;
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #b8a594;
+}
+
+.btn-primary:hover {
+  background: #cec4bb;
+}
+
+.btn-secondary {
+  background: #b8a594;
+}
+
+.btn-secondary:hover {
+  background: #eaa4a7;
+}
+
+/* ------- Logo ------- */
+.header_logo {
+  padding: 50px 0px 20px 0px;
+}
+
+.header_logo img {
+  width: 145px;
+}
+
+/* ------- Header ------- */
+.superscription,
+header {
+  background-color: #d0cdc6;
+}
+
+.superscription u {
+  text-decoration: none;
+  border-bottom: 1px solid #f0ece3;
+  padding-bottom: 1px;
+  line-height: 1.5;
+}
+
+.superscription h2 {
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+.superscription p {
+  text-align: center;
+  font-weight: 300;
+  max-width: 65%;
+  margin: 0px auto;
+  padding: 50px 0;
+}
+
+.superscription_img {
+  text-align: center;
+  background: linear-gradient(180deg, #d0cdc6 50%, #f4f4f4 50%);
+}
+
+.superscription_img .limit-wid {
+  margin-bottom: 90px;
+}
+
+.superscription_img img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .superscription h2 {
+    max-width: 80%;
+  }
+
+  .superscription p {
+    max-width: 90%;
+  }
+
+  .superscription_img .btn-primary {
+    margin: 0 20px;
+  }
+
+  .superscription_img .limit-wid {
+    margin-bottom: 20px;
+  }
+}
+
+/* ------- Explicacao do mestodo ------- */
+.explanation_method {
+  margin-top: 170px;
+}
+
+.explanation_method h2 {
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.explanation_method p {
+  font-weight: 300;
+  line-height: 40px;
+  font-size: 1.2em;
+}
+
+/* ------- como funciona ------- */
+
+.explanation_method_how_works {
+  margin-top: 60px;
+}
+
+.explanation_method_how_works .how_works_step {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.explanation_method_how_works .how_works_step div {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.explanation_method_how_works .how_works_step div p {
+  text-align: left;
+}
+
+.explanation_method_how_works .how_works_step .circle {
+  text-align: center;
+  font-size: 24px;
+  margin-right: 25px;
+}
+
+.explanation_method_how_works .how_works_step .circle span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f0ece3;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.explanation_method_how_works .how_works_step img {
+  width: 80%;
+}
+
+/* beneficios  */
+.explanation_method_how_works .benefits .benefits_list {
+  display: flex; /* Para criar duas colunas lado a lado */
+  justify-content: space-between; /* Espaço entre as colunas */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.explanation_method_how_works .benefits .benefits_list .column {
+  flex: 1; /* Para cada coluna ocupar metade do espaço disponível */
+  column-count: 1; /* Cada coluna contém apenas uma linha */
+  margin-right: 40px;
+}
+
+.explanation_method_how_works .benefits .checkmark {
+  display: inline-block;
+  width: 20px; /* Largura da imagem do check */
+  height: 20px; /* Altura da imagem do check */
+  background-image: url("./resourses/check.png");
+  background-size: contain; /* Ajusta o tamanho da imagem para caber no contêiner */
+  margin-right: 10px; /* Espaço entre o check e o texto */
+}
+
+.explanation_method_how_works .explanation_cta {
+  display: flex;
+  margin-top: 90px;
+}
+
+.explanation_method_how_works .explanation_cta img {
+  width: 400px;
+  margin-right: 40px;
+}
+
+.explanation_method_how_works .explanation_cta div p:last-of-type {
+  margin-bottom: 30px;
+}
+
+.explanation_method_how_works .explanation_cta a {
+  font-size: 1em;
+}
+
+@media (max-width: 768px) {
+  .explanation_method_how_works .benefits .benefits_list {
+    display: inherit;
+  }
+
+  .explanation_method_how_works .explanation_cta {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .explanation_method_how_works .explanation_cta p {
+    text-align: left;
+  }
+
+  .explanation_method_how_works .explanation_cta img {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+/* ------- por que escolher nos ------- */
+
+.why_we {
+  background-color: #f0ece3;
+  padding: 100px 0;
+  margin-top: 100px;
+}
+
+.why_we .limit-wid {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.why_we .limit-wid div {
+  margin-right: 50px;
+  width: 500px;
+}
+
+.why_we h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.why_we p {
+  margin-bottom: 20px;
+  line-height: 35px;
+}
+
+.why_we img {
+  width: 400px;
+}
+
+.why_we .checkmark {
+  display: inline-block;
+  width: 20px; /* Largura da imagem do check */
+  height: 20px; /* Altura da imagem do check */
+  background-image: url("./resourses/check.png");
+  background-size: contain; /* Ajusta o tamanho da imagem para caber no contêiner */
+  margin-right: 10px; /* Espaço entre o check e o texto */
+}
+
+@media (max-width: 768px) {
+  .why_we .limit-wid {
+    flex-wrap: wrap;
+  }
+
+  .why_we .limit-wid div {
+    margin-right: 0px;
+    width: 100%;
+  }
+}
+
+/* ------- como se sente ------- */
+.option {
+  background-color: #eee2d6;
+  padding-top: 100px;
+}
+
+.option .limit-wid {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.option h2 {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.option .colum {
+  display: flex; /* Para criar duas colunas lado a lado */
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.option .colum p {
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.option .colum p:first-of-type {
+  margin-right: 20px;
+}
+
+.option .option_image {
+  text-align: center;
+  background: linear-gradient(180deg, #eee2d6 39%, #f4f4f4 39%);
+}
+
+.option .option_image img {
+  width: 60%;
+}
+
+.option_text {
+  margin-bottom: 150px;
+}
+
+.option_text .limit-wid {
+  text-align: center;
+}
+
+.option_text .title {
+  margin-top: 100px;
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
+.option_text .description {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .option .colum {
+    flex-wrap: wrap;
+    padding: 0px 10px;
+  }
+
+  .option .colum p:first-of-type {
+    margin-right: 0px;
+  }
+
+  .option .colum p {
+    margin-bottom: 20px;
+  }
+}
+
+/* -------- testeminhas --------  */
+.testimonials {
+  background-image: url("./resourses/bg_testimonials.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.testimonials .limit-wid div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.testimonials h2 {
+  margin-bottom: 30px;
+}
+
+.testimonials img {
+  width: 250px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .testimonials .limit-wid div {
+    flex-wrap: wrap;
+  }
+}
+
+/* ----- preco -----  */
+.price_box {
+  background-image: url("./resourses/study.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 100px 0;
+}
+
+.price_box .box {
+  text-align: center;
+  width: 550px;
+  border-radius: 20px;
+  background: rgba(241, 237, 231, 0.8);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+}
+
+.price_box .box h4 {
+  padding: 20px 0;
+  padding-top: 30px;
+}
+
+.box_text {
+  margin-bottom: 40px;
+}
+
+.price_box .box p:last-of-type {
+  padding: 40px 50px;
+  font-weight: 300;
+}
+
+.price_box .box .box_price_text {
+  color: #908e8b;
+  padding: 20px 0;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.price_box .box .box_price_text p:first-of-type {
+  text-align: left;
+}
+
+.box_text {
+  padding: 0 50px 10px;
+}
+
+.price_box .box .price_number span {
+  font-family: Antic Didone;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .price_box .box {
+    width: 90%;
+  }
+
+  .price_box .box .price_number span {
+    font-size: 65px;
+  }
+
+  .price_box .box .box_price_text p:first-of-type {
+    padding: 40px 35px 0;
+  }
+
+  .price_box .box p:last-of-type {
+    padding: 45px 40px 40px;
+  }
+
+  .price_box .box .price_number {
+    padding: 45px 40px 40px;
+  }
+}
+
+/* ----- duvidas -----  */
+.doubts {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  padding-bottom: 175px;
+  padding-top: 30px;
+  margin-top: 130px;
+}
+
+.doubts .doubts_title {
+  font-family: Playfair Display;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.accordion p,
+.accordion li i:before,
+.accordion li i:after {
+  transition: all 0.25s ease-in-out;
+}
+
+.accordion li {
+  animation: flipdown 0.5s ease both;
+}
+
+.no-select,
+.accordion .accordion_title {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.accordion .accordion_title {
+  font-size: 20px;
+  font-weight: 300;
+  display: block;
+  margin: 0;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.accordion p {
+  padding: 10px 30px;
+  border-top: 1px dotted #dce7eb;
+  color: #636363;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+}
+
+.accordion {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-top: 18px;
+  border-radius: 32px;
+  background: linear-gradient(
+    110deg,
+    rgba(255, 252, 249, 0.7) 5.18%,
+    rgba(255, 252, 249, 0.4) 86.85%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(3px);
+  margin-bottom: 30px;
+}
+
+.accordion li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+
+.accordion li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+
+.accordion li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+
+.accordion li:last-of-type {
+  padding-bottom: 0;
+}
+
+.accordion li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 25px;
+  top: 12px;
+}
+
+.accordion li i:before,
+.accordion li i:after {
+  content: "";
+  position: absolute;
+  background-color: #e9945b;
+  width: 3px;
+  height: 9px;
+}
+
+.accordion li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+
+.accordion li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+
+.accordion li input[type="checkbox"] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.accordion li input[type="checkbox"]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+
+.accordion li input[type="checkbox"]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+
+.accordion li input[type="checkbox"]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+}
+
+/* ------ footer ------ */
+
+footer {
+  background: #fcfcfc;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+footer .footer_logo img {
+  width: 120px;
+}
+
+footer .copyright p {
+  font-weight: 200;
+}
+
+@media (max-width: 768px) {
+  footer div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
